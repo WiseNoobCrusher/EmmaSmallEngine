@@ -1,0 +1,107 @@
+/* Universal */
+
+.Font {
+    font-family: "Comic Sans MS";
+}
+
+.Banner {
+    text-align: center;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+
+/* Navigation */
+
+.Nav {
+    margin: 25px;
+    border-radius: 30px;
+    display: block;
+    background-color: #009900;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+.NavItems {
+    text-decoration: none;
+    margin-right: 120px;
+}
+
+/* Login */
+
+.PageFontSize {
+    font-size: 20pt;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.LabelLogin {
+    text-align: left;
+    width: 120px;
+}
+
+.LoginForm {
+    width: 19%;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+
+.LoginButtonsDiv {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.LoginButton, .RegisterButton {
+    width: 130px;
+    height: 60px;
+    font-size: medium;
+    font-weight: 700;
+}
+
+.Messages {
+    color: #CC3300;
+    font-size: 20pt;
+    text-align: center;
+}
+
+/* Register */
+
+.RegisterForm {
+    width: 19%;
+    font-size: 15pt;
+    margin: 0 auto;
+}
+
+.RegisterButtonsDiv {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ConfirmRegButton, .BackButton {
+    width: 130px;
+    height: 60px;
+    font-size: medium;
+    font-weight: 700;
+}
+
+/* Home */
+
+/* Sales */
+
+.CustomerDDL {
+    width: 200px;
+    height: 30px;
+}
+
+.LabelCustomer {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15pt;
+}
+
+.CustButton {
+    border-radius: 10px;
+    font-size: 11.5pt;
+    width: 200px;
+    height: 50px;
+}
