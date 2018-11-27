@@ -15,7 +15,7 @@
             <h1><strong>Emma&#39;s Small Engine</strong></h1>
         </div>
         <div>
-            <strong><p class="PageFontSize">Login:</p></strong>
+            <strong><p class="PageFontSize">Login:</p></strong><br />
             <table class="LoginForm">
                 <tr>
                     <td class="LabelLogin">Username:</td>
@@ -24,7 +24,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="textBoxLabels">Password:</td>
+                    <td class="LabelLogin">Password:</td>
                     <td style="text-align: right">
                         <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                     </td>

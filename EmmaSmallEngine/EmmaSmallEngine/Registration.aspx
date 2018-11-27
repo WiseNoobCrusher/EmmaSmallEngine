@@ -13,24 +13,24 @@
             <asp:Image ID="logo" runat="server" ImageUrl="~/img/logo.png" Width="185px" style="text-align: left" />
                 <h1><strong>Emma&#39;s Small Engine</strong></h1>
         </div>
-        <strong><p class="PageFontSize">Register New User:</p></strong>
+        <strong><p class="PageFontSize">Register New User:</p></strong><br />
         <table class="RegisterForm">
             <tr>
                 <td class="auto-style1">Username:</td>
-                <td>
-                    <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
+                <td class="TextboxRegister">
+                    <asp:TextBox ID="txtUser" runat="server" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Password:</td>
-                <td>
-                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password"></asp:TextBox>
+                <td class="TextboxRegister">
+                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style1">Confirm:</td>
-                <td>
-                    <asp:TextBox ID="txtConfirm" runat="server" TextMode="Password"></asp:TextBox>
+                <td class="TextboxRegister">
+                    <asp:TextBox ID="txtConfirm" runat="server" TextMode="Password" Height="20px" Width="160px"></asp:TextBox>
                 </td>
             </tr>
         </table>

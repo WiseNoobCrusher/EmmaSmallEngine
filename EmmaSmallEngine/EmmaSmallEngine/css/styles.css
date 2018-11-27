@@ -67,9 +67,18 @@
 /* Register */
 
 .RegisterForm {
-    width: 19%;
+    width: 24%;
     font-size: 15pt;
     margin: 0 auto;
+}
+
+.LabelRegister {
+    text-align: left;
+    width: 8381px;
+}
+
+.TextboxRegister {
+    width: 464px;
 }
 
 .RegisterButtonsDiv {
