@@ -22,15 +22,6 @@ namespace EmmaSmallEngine {
         protected global::System.Web.UI.HtmlControls.HtmlForm login;
         
         /// <summary>
-        /// logo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image logo;
-        
-        /// <summary>
         /// txtUser control.
         /// </summary>
         /// <remarks>

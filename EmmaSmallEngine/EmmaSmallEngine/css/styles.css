@@ -5,13 +5,12 @@
 }
 
 .Banner {
-    text-align: center;
-    font-size: 15pt;
+    display: block;
     margin: 0 auto;
+    width: 30%;
 }
 
 /* Navigation */
-
 .Nav {
     margin: 25px;
     border-radius: 30px;
@@ -67,14 +66,15 @@
 /* Register */
 
 .RegisterForm {
-    width: 24%;
+    width: 19%;
     font-size: 15pt;
+    display: block;
     margin: 0 auto;
 }
 
 .LabelRegister {
     text-align: left;
-    width: 8381px;
+    width: 120px;
 }
 
 .TextboxRegister {
@@ -94,6 +94,8 @@
 }
 
 /* Home */
+
+
 
 /* Sales */
 

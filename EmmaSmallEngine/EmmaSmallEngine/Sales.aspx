@@ -9,9 +9,8 @@
     </head>
     <body class="Font">
         <form id="sales" runat="server">
-            <div class="Banner">
-                <asp:Image ID="logo" runat="server" ImageUrl="~/img/logo.png" Width="185px" style="text-align: left" />
-                <h1><strong>Emma&#39;s Small Engine</strong></h1>
+            <div>
+                <asp:Image class="Banner" runat="server" ImageUrl="~/img/logo.png" />
             </div>
             <div class="Nav">
                 <br />
