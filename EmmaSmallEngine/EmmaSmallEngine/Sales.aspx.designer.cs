@@ -22,6 +22,15 @@ namespace EmmaSmallEngine {
         protected global::System.Web.UI.HtmlControls.HtmlForm sales;
         
         /// <summary>
+        /// ddlCustomers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCustomers;
+        
+        /// <summary>
         /// custSubmit control.
         /// </summary>
         /// <remarks>
@@ -31,39 +40,84 @@ namespace EmmaSmallEngine {
         protected global::System.Web.UI.WebControls.Button custSubmit;
         
         /// <summary>
-        /// lvCustInfo control.
+        /// fvCustInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvCustInfo;
+        protected global::System.Web.UI.WebControls.FormView fvCustInfo;
         
         /// <summary>
-        /// lvEquipment control.
+        /// fvEquipment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvEquipment;
+        protected global::System.Web.UI.WebControls.FormView fvEquipment;
         
         /// <summary>
-        /// lvOrders control.
+        /// fvOrders control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvOrders;
+        protected global::System.Web.UI.WebControls.FormView fvOrders;
         
         /// <summary>
-        /// lvRepairs control.
+        /// fvRepairs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvRepairs;
+        protected global::System.Web.UI.WebControls.FormView fvRepairs;
+        
+        /// <summary>
+        /// dsCustomers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsCustomers;
+        
+        /// <summary>
+        /// dsCustInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsCustInfo;
+        
+        /// <summary>
+        /// dsEquipment control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsEquipment;
+        
+        /// <summary>
+        /// dsOrders control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsOrders;
+        
+        /// <summary>
+        /// dsRepairs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsRepairs;
     }
 }

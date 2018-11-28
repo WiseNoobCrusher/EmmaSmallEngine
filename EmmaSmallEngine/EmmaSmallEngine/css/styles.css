@@ -100,27 +100,55 @@
 /* Sales */
 
 .CustomerDDL {
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 45px;
+    font-size: 20px;
 }
 
 .Labels {
     margin: 0 auto;
     text-align: center;
-    font-size: 15pt;
+    font-size: 22pt;
 }
 
 .CustButton {
     border-radius: 10px;
     font-size: 11.5pt;
-    width: 200px;
+    width: 225px;
     height: 50px;
 }
 
-.SalesListViews {
-    display: block;
+.SalesInlineBlock {
+    width: 25%;
+    display: inline-flex;
+    text-align: center;
+}
+
+.SalesFormView {
     margin: 0 auto;
 }
 
-/* Admin */
+#fvEquipment, #fvCustInfo, #fvOrders, #fvRepairs {
+    width: 100%;
+    height: 115px;
+    font-size: 15pt;
+}
 
+#fvOrders {
+    height: 161px;
+}
+
+/* Ordering */
+
+/* Inventory */
+.InventoryForm {
+    text-align: center;
+}
+
+#ddlInventory {
+    text-align: center;
+    height:100px;
+    width:316px;
+}
+
+/* Admin */

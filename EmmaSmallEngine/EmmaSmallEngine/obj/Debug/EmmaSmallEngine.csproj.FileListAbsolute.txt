@@ -78,3 +78,6 @@ E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\EmmaSmallEngine
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\EmmaSmallEngine.csproj.CopyComplete
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\FinalAssignment.dll
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\FinalAssignment.pdb
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.pdb
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll.config

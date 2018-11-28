@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.dll.config
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.dll
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.pdb
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.dll
+C:\Users\Administrator\Desktop\Final Assignment\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.pdb
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\Emmas.mdf
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\Emmas_log.ldf
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.dll.config
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.dll
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.pdb
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.csproj.CoreCompileInputs.cache
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.dll
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.pdb

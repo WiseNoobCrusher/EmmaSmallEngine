@@ -13,13 +13,13 @@
                 <asp:Image class="Banner" runat="server" ImageUrl="~/img/logo.png" />
             </div>
             <div class="Nav">
-                <br />
+                <br style="font-size: small"/>
                 <a class="NavItems" href="Home.aspx" style="text-decoration: underline">Home</a>
                 <a class="NavItems" href="Sales.aspx">Sales</a>
                 <a class="NavItems" href="Ordering.aspx">Ordering</a>
                 <a class="NavItems" href="Inventory.aspx">Inventory</a>
                 <a class="NavItems" href="Admin.aspx"style="margin-right: 0px">Admin</a>
-                <br /><br />
+                <br style="font-size: small"/><br style="font-size: small"/>
             </div>
             <div>
                 <asp:Image ID="random" runat="server" />
