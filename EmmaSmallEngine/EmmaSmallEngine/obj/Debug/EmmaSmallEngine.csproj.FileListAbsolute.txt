@@ -61,7 +61,6 @@ E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.Owin.Securi
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.Owin.Security.OAuth.dll
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Newtonsoft.Json.dll
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Owin.dll
-E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\EntityFramework.xml
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\EntityFramework.SqlServer.xml
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.AspNet.Identity.Core.xml
@@ -73,11 +72,12 @@ E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.Owin.Securi
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.Owin.Security.Cookies.xml
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.Owin.Security.OAuth.xml
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Newtonsoft.Json.xml
-E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.pdb
-E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll.config
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\EmmaSmallEngine.csprojAssemblyReference.cache
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\EmmaSmallEngine.csproj.CoreCompileInputs.cache
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\EmmaSmallEngine.csproj.CopyComplete
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\FinalAssignment.dll
 E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\obj\Debug\FinalAssignment.pdb
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.pdb
+E:\Emma's Small Engine\EmmaSmallEngine\EmmaSmallEngine\bin\SalesDatasets.dll.config

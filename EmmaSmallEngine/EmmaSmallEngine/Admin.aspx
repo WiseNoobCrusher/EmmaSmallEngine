@@ -6,6 +6,11 @@
     <head runat="server">
         <title>Emma's Small Engine - Admin</title>
         <link rel="stylesheet" href="~/css/styles.css" />
+        <style type="text/css">
+            .auto-style1 {
+                text-align: center;
+            }
+        </style>
     </head>
     <body class="Font">
         <form id="admin" runat="server">
@@ -21,6 +26,20 @@
                 <a class="NavItems" href="Inventory.aspx">Inventory</a>
                 <a class="NavItems" href="Admin.aspx" style="margin-right: 0px; text-decoration: underline;">Admin</a>
                 <br /><br />
+            </div>
+            <div class="auto-style1">
+
+                <asp:RadioButton ID="RadioButton1" runat="server" Text="Weekly Report" />
+                &nbsp;&nbsp;&nbsp;
+                <asp:RadioButton ID="RadioButton2" runat="server" Text="Warranty Report" />
+                <br />
+                <br style="font-size: x-small" />
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" Text="View" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="Button2" runat="server" Text="View" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
         </form>
     </body>

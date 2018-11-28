@@ -24,13 +24,31 @@
             </div>
 
             <div style="text-align: center">
-                <label class="LabelCustomer">Select a Customer:</label><br />
+                <label class="Labels">Select a Customer:</label><br />
                 <asp:DropDownList runat="server" class="CustomerDDL">
                     <asp:ListItem>Pick one...</asp:ListItem>
                 </asp:DropDownList>
                 <br />
                 <br />
                 <asp:Button ID="custSubmit" class="CustButton" runat="server" Text="Submit" />
+                <br /><br /><br />
+                <div class="SalesListViews">
+                    <label class="Labels">Customer Info: </label>
+                    <asp:ListView ID="lvCustInfo" runat="server">
+                    </asp:ListView><br />
+
+                    <label class="Labels">Equipment Info: </label>
+                    <asp:ListView ID="lvEquipment" runat="server">
+                    </asp:ListView><br />
+
+                    <label class="Labels">Order Info: </label>
+                    <asp:ListView ID="lvOrders" runat="server">
+                    </asp:ListView><br />
+
+                    <label class="Labels">Repair Info: </label>
+                    <asp:ListView ID="lvRepairs" runat="server">
+                    </asp:ListView>
+                </div>
                 <br />
             </div>
 
