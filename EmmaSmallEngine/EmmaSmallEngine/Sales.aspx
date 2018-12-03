@@ -6,16 +6,7 @@
     <head runat="server">
         <title>Emma's Small Engine - Sales</title>
         <link rel="stylesheet" href="~/css/styles.css" />
-        <style type="text/css">
-            .auto-style1 {
-                width: 45%;
-                max-height: 45%;
-                display: inline-block;
-                text-align: center;
-                margin-top: 0px;
-            }
-        </style>
-    </head>
+        </head>
     <body class="Font">
         <form id="sales" runat="server">
             <div>
@@ -44,7 +35,7 @@
                     <div class="SalesInlineBlock">
                         <label class="Labels">Customer Info: </label>
                         <div class="SalesFormView">
-                            <asp:FormView ID="fvCustInfo" runat="server" DataSourceID="dsCustInfo">
+                            <asp:FormView ID="fvCustInfo" runat="server" DataSourceID="dsCustInfo" HorizontalAlign="Center">
                                 <EditItemTemplate>
                                     custEmail:
                                     <asp:TextBox ID="custEmailTextBox" runat="server" Text='<%# Bind("custEmail") %>' />
@@ -108,7 +99,7 @@
                     <div class="SalesInlineBlock">
                         <label class="Labels">Equipment Info: </label>
                         <div class="SalesFormView">
-                            <asp:FormView ID="fvEquipment" runat="server" DataKeyNames="id" DataSourceID="dsEquipment">
+                            <asp:FormView ID="fvEquipment" runat="server" DataKeyNames="id" DataSourceID="dsEquipment" HorizontalAlign="Center">
                                 <EditItemTemplate>
                                     id:
                                     <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
@@ -149,7 +140,7 @@
                     <div class="SalesInlineBlock">
                         <label class="Labels">Order Info: </label>
                         <div class="SalesFormView">
-                            <asp:FormView ID="fvOrders" runat="server" DataKeyNames="id" DataSourceID="dsOrders">
+                            <asp:FormView ID="fvOrders" runat="server" DataKeyNames="id" DataSourceID="dsOrders" HorizontalAlign="Center">
                                 <EditItemTemplate>
                                     id:
                                     <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
@@ -200,7 +191,7 @@
                     <div class="SalesInlineBlock">
                         <label class="Labels">Repair Info: </label>
                         <div class="SalesFormView">
-                            <asp:FormView ID="fvRepairs" runat="server" DataKeyNames="id" DataSourceID="dsRepairs">
+                            <asp:FormView ID="fvRepairs" runat="server" DataKeyNames="id" DataSourceID="dsRepairs" HorizontalAlign="Center">
                                 <EditItemTemplate>
                                     id:
                                     <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />

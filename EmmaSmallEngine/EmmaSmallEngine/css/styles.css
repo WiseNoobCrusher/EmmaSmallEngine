@@ -119,8 +119,8 @@
 }
 
 .SalesInlineBlock {
-    width: 25%;
-    display: inline-flex;
+    width: 35%;
+    display: inline-block;
     text-align: center;
 }
 
@@ -129,8 +129,6 @@
 }
 
 #fvEquipment, #fvCustInfo, #fvOrders, #fvRepairs {
-    width: 100%;
-    height: 115px;
     font-size: 15pt;
 }
 
