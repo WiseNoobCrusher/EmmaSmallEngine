@@ -1,22 +1,40 @@
 /* Universal */
+body {
+    background-color:red;
+    padding-right: 40px;
+    padding-left: 40px;
+}
 
 .Font {
     font-family: "Comic Sans MS";
 }
-
+.des{
+	text-align: left;
+	column-count: 2;
+}
 .Banner {
     display: block;
+    align-items: center;
     margin: 0 auto;
     width: 30%;
 }
 
+.homeimage {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 320px;
+    margin: 25px;
+    border-radius: 30px;
+    
+}
 /* Navigation */
 .Nav {
     margin: 25px;
     border-radius: 30px;
-    display: block;
+    
     background-color: #009900;
-    text-align: center;
+    
     font-size: 18pt;
     font-weight: 700;
 }
@@ -147,6 +165,9 @@
     text-align: center;
     height:100px;
     width:316px;
+}
+.copyright{
+	text-align: center;
 }
 
 /* Admin */
