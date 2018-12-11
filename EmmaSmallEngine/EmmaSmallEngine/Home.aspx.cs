@@ -18,6 +18,27 @@ namespace EmmaSmallEngine
             {
                 Response.Redirect("~/Login.aspx");
             }
+            else
+            {
+                lblWelcome.Text = User.Identity.GetUserName();
+            }
+        }
+
+        protected void btnSales_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Sales.aspx");
+        }
+        protected void btnInventory_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Inventory.aspx");
+        }
+        protected void btnOrdering_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Ordering.aspx");
+        }
+        protected void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin.aspx");
         }
     }
 }

@@ -40,84 +40,102 @@ namespace EmmaSmallEngine {
         protected global::System.Web.UI.WebControls.Button custSubmit;
         
         /// <summary>
-        /// fvCustInfo control.
+        /// lblCustInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView fvCustInfo;
+        protected global::System.Web.UI.WebControls.Label lblCustInfo;
         
         /// <summary>
-        /// fvEquipment control.
+        /// tblCustInfo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView fvEquipment;
+        protected global::System.Web.UI.WebControls.Table tblCustInfo;
         
         /// <summary>
-        /// fvOrders control.
+        /// tblCustInfoTableHeadings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView fvOrders;
+        protected global::System.Web.UI.WebControls.TableRow tblCustInfoTableHeadings;
         
         /// <summary>
-        /// fvRepairs control.
+        /// lblOrders control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView fvRepairs;
+        protected global::System.Web.UI.WebControls.Label lblOrders;
         
         /// <summary>
-        /// dsCustomers control.
+        /// lblOrdersNull control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource dsCustomers;
+        protected global::System.Web.UI.WebControls.Label lblOrdersNull;
         
         /// <summary>
-        /// dsCustInfo control.
+        /// tblOrders control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource dsCustInfo;
+        protected global::System.Web.UI.WebControls.Table tblOrders;
         
         /// <summary>
-        /// dsEquipment control.
+        /// tblOrdersTableHeadings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource dsEquipment;
+        protected global::System.Web.UI.WebControls.TableRow tblOrdersTableHeadings;
         
         /// <summary>
-        /// dsOrders control.
+        /// lblRepairs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource dsOrders;
+        protected global::System.Web.UI.WebControls.Label lblRepairs;
         
         /// <summary>
-        /// dsRepairs control.
+        /// lblRepairsNull control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource dsRepairs;
+        protected global::System.Web.UI.WebControls.Label lblRepairsNull;
+        
+        /// <summary>
+        /// tblRepairs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tblRepairs;
+        
+        /// <summary>
+        /// tblRepairsTableHeadings control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TableRow tblRepairsTableHeadings;
     }
 }

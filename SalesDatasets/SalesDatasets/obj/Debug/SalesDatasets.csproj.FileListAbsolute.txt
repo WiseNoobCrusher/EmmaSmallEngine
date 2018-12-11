@@ -12,3 +12,4 @@ E:\Emma's Small Engine\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.pdb
 E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.csproj.CoreCompileInputs.cache
 E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.dll
 E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.pdb
+E:\Emma's Small Engine\SalesDatasets\SalesDatasets\obj\Debug\SalesDatasets.csprojAssemblyReference.cache

@@ -21,19 +21,23 @@
                 <a class="NavItems" href="Admin.aspx" style="margin-right: 0px; text-decoration: underline;">Admin</a>
                 <br style="font-size: small"/><br style="font-size: small"/>
             </div>
-            <div class="auto-style1">
-
-                <asp:RadioButton ID="RadioButton1" runat="server" Text="Weekly Report" />
-                &nbsp;&nbsp;&nbsp;
-                <asp:RadioButton ID="RadioButton2" runat="server" Text="Warranty Report" />
-                <br />
-                <br style="font-size: x-small" />
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" Text="View" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="Button2" runat="server" Text="View" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="AdminButtonBlock">
+                <div class="AdminRadioButtons">
+                    <asp:RadioButton runat="server" id="rbWeekly" GroupName="Report" AutoPostBack="true" /><br />
+                    <asp:Label runat="server">Weekly Report</asp:Label>
+                </div>
+                <div class="AdminRadioButtons">
+                    <asp:RadioButton runat="server" id="rbOrders" GroupName="Report" AutoPostBack="true" /><br />
+                    <asp:Label runat="server">Warranty Report</asp:Label>
+                </div>
+            </div>
+            <br />
+            <div class="GenerateButton">
+                <asp:Button ID="btnGenerate" type="Submit" Text="Generate" runat="server" OnClick="btnGenerate_Click" />
+            </div>
+            <br /><br />
+            <div>
+                <asp:Label id="hi" runat="server" Visible="false"></asp:Label>
             </div>
         </form>
     </body>

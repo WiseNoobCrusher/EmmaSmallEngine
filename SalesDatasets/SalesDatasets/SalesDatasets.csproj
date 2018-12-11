@@ -61,6 +61,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SalesDataset.cs">
+      <DependentUpon>SalesDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SalesDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

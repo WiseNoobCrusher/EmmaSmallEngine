@@ -18,6 +18,14 @@ namespace EmmaSmallEngine
             {
                 Response.Redirect("~/Login.aspx");
             }
+
+            this.hi.Visible = false;
+        }
+
+        protected void btnGenerate_Click(object sender, EventArgs e)
+        {
+            this.hi.Visible = true;
+            this.hi.Text = "I am sorry Peter.";
         }
     }
 }

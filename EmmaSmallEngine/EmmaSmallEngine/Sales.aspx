@@ -6,7 +6,7 @@
     <head runat="server">
         <title>Emma's Small Engine - Sales</title>
         <link rel="stylesheet" href="~/css/styles.css" />
-        </head>
+    </head>
     <body class="Font">
         <form id="sales" runat="server">
             <div>
@@ -24,270 +24,50 @@
 
             <div style="text-align: center">
                 <label class="Labels">Select a Customer:</label><br />
-                <asp:DropDownList runat="server" class="CustomerDDL" ID="ddlCustomers" AutoPostBack="True" DataSourceID="dsCustomers" DataTextField="Customer" DataValueField="id">
-                    <asp:ListItem>Pick one...</asp:ListItem>
+                <asp:DropDownList runat="server" class="CustomerDDL" ID="ddlCustomers">
                 </asp:DropDownList>
                 <br />
                 <br />
-                <asp:Button ID="custSubmit" class="CustButton" runat="server" Text="Submit" />
+                <asp:Button ID="custSubmit" class="CustButton" runat="server" Text="Submit" OnClick="custSubmit_Click" />
                 <br /><br /><br />
-                <div>
-                    <div class="SalesInlineBlock">
-                        <label class="Labels">Customer Info: </label>
-                        <div class="SalesFormView">
-                            <asp:FormView ID="fvCustInfo" runat="server" DataSourceID="dsCustInfo" HorizontalAlign="Center">
-                                <EditItemTemplate>
-                                    custEmail:
-                                    <asp:TextBox ID="custEmailTextBox" runat="server" Text='<%# Bind("custEmail") %>' />
-                                    <br />
-                                    custPostal:
-                                    <asp:TextBox ID="custPostalTextBox" runat="server" Text='<%# Bind("custPostal") %>' />
-                                    <br />
-                                    custCity:
-                                    <asp:TextBox ID="custCityTextBox" runat="server" Text='<%# Bind("custCity") %>' />
-                                    <br />
-                                    custAddress:
-                                    <asp:TextBox ID="custAddressTextBox" runat="server" Text='<%# Bind("custAddress") %>' />
-                                    <br />
-                                    custPhone:
-                                    <asp:TextBox ID="custPhoneTextBox" runat="server" Text='<%# Bind("custPhone") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    custEmail:
-                                    <asp:TextBox ID="custEmailTextBox" runat="server" Text='<%# Bind("custEmail") %>' />
-                                    <br />
-                                    custPostal:
-                                    <asp:TextBox ID="custPostalTextBox" runat="server" Text='<%# Bind("custPostal") %>' />
-                                    <br />
-                                    custCity:
-                                    <asp:TextBox ID="custCityTextBox" runat="server" Text='<%# Bind("custCity") %>' />
-                                    <br />
-                                    custAddress:
-                                    <asp:TextBox ID="custAddressTextBox" runat="server" Text='<%# Bind("custAddress") %>' />
-                                    <br />
-                                    custPhone:
-                                    <asp:TextBox ID="custPhoneTextBox" runat="server" Text='<%# Bind("custPhone") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    custEmail:
-                                    <asp:Label ID="custEmailLabel" runat="server" Text='<%# Bind("custEmail") %>' />
-                                    <br />
-                                    custPostal:
-                                    <asp:Label ID="custPostalLabel" runat="server" Text='<%# Bind("custPostal") %>' />
-                                    <br />
-                                    custCity:
-                                    <asp:Label ID="custCityLabel" runat="server" Text='<%# Bind("custCity") %>' />
-                                    <br />
-                                    custAddress:
-                                    <asp:Label ID="custAddressLabel" runat="server" Text='<%# Bind("custAddress") %>' />
-                                    <br />
-                                    custPhone:
-                                    <asp:Label ID="custPhoneLabel" runat="server" Text='<%# Bind("custPhone") %>' />
-                                    <br />
-
-                                </ItemTemplate>
-                            </asp:FormView>
-                        </div>
-                    </div>
-                        
-                    <div class="SalesInlineBlock">
-                        <label class="Labels">Equipment Info: </label>
-                        <div class="SalesFormView">
-                            <asp:FormView ID="fvEquipment" runat="server" DataKeyNames="id" DataSourceID="dsEquipment" HorizontalAlign="Center">
-                                <EditItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    equModel:
-                                    <asp:TextBox ID="equModelTextBox" runat="server" Text='<%# Bind("equModel") %>' />
-                                    <br />
-                                    eqtType:
-                                    <asp:TextBox ID="eqtTypeTextBox" runat="server" Text='<%# Bind("eqtType") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    equModel:
-                                    <asp:TextBox ID="equModelTextBox" runat="server" Text='<%# Bind("equModel") %>' />
-                                    <br />
-                                    eqtType:
-                                    <asp:TextBox ID="eqtTypeTextBox" runat="server" Text='<%# Bind("eqtType") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    equModel:
-                                    <asp:Label ID="equModelLabel" runat="server" Text='<%# Bind("equModel") %>' />
-                                    <br />
-                                    eqtType:
-                                    <asp:Label ID="eqtTypeLabel" runat="server" Text='<%# Bind("eqtType") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                        </div>
-                    </div>
-                    <div class="SalesInlineBlock">
-                        <label class="Labels">Order Info: </label>
-                        <div class="SalesFormView">
-                            <asp:FormView ID="fvOrders" runat="server" DataKeyNames="id" DataSourceID="dsOrders" HorizontalAlign="Center">
-                                <EditItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    ordNumber:
-                                    <asp:TextBox ID="ordNumberTextBox" runat="server" Text='<%# Bind("ordNumber") %>' />
-                                    <br />
-                                    ordDate:
-                                    <asp:TextBox ID="ordDateTextBox" runat="server" Text='<%# Bind("ordDate") %>' />
-                                    <br />
-                                    orlPrice:
-                                    <asp:TextBox ID="orlPriceTextBox" runat="server" Text='<%# Bind("orlPrice") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    ordNumber:
-                                    <asp:TextBox ID="ordNumberTextBox" runat="server" Text='<%# Bind("ordNumber") %>' />
-                                    <br />
-                                    ordDate:
-                                    <asp:TextBox ID="ordDateTextBox" runat="server" Text='<%# Bind("ordDate") %>' />
-                                    <br />
-                                    orlPrice:
-                                    <asp:TextBox ID="orlPriceTextBox" runat="server" Text='<%# Bind("orlPrice") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    ordNumber:
-                                    <asp:Label ID="ordNumberLabel" runat="server" Text='<%# Bind("ordNumber") %>' />
-                                    <br />
-                                    ordDate:
-                                    <asp:Label ID="ordDateLabel" runat="server" Text='<%# Bind("ordDate") %>' />
-                                    <br />
-                                    orlPrice:
-                                    <asp:Label ID="orlPriceLabel" runat="server" Text='<%# Bind("orlPrice") %>' />
-                                    <br />
-
-                                </ItemTemplate>
-                            </asp:FormView>
-                        </div>
-                    </div>
-                    <div class="SalesInlineBlock">
-                        <label class="Labels">Repair Info: </label>
-                        <div class="SalesFormView">
-                            <asp:FormView ID="fvRepairs" runat="server" DataKeyNames="id" DataSourceID="dsRepairs" HorizontalAlign="Center">
-                                <EditItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    serName:
-                                    <asp:TextBox ID="serNameTextBox" runat="server" Text='<%# Bind("serName") %>' />
-                                    <br />
-                                    serDescription:
-                                    <asp:TextBox ID="serDescriptionTextBox" runat="server" Text='<%# Bind("serDescription") %>' />
-                                    <br />
-                                    serPrice:
-                                    <asp:TextBox ID="serPriceTextBox" runat="server" Text='<%# Bind("serPrice") %>' />
-                                    <br />
-                                    serordDateIn:
-                                    <asp:TextBox ID="serordDateInTextBox" runat="server" Text='<%# Bind("serordDateIn") %>' />
-                                    <br />
-                                    serordDateOut:
-                                    <asp:TextBox ID="serordDateOutTextBox" runat="server" Text='<%# Bind("serordDateOut") %>' />
-                                    <br />
-                                    serordIssue:
-                                    <asp:TextBox ID="serordIssueTextBox" runat="server" Text='<%# Bind("serordIssue") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-                                    &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </EditItemTemplate>
-                                <InsertItemTemplate>
-                                    serName:
-                                    <asp:TextBox ID="serNameTextBox" runat="server" Text='<%# Bind("serName") %>' />
-                                    <br />
-                                    serDescription:
-                                    <asp:TextBox ID="serDescriptionTextBox" runat="server" Text='<%# Bind("serDescription") %>' />
-                                    <br />
-                                    serPrice:
-                                    <asp:TextBox ID="serPriceTextBox" runat="server" Text='<%# Bind("serPrice") %>' />
-                                    <br />
-                                    serordDateIn:
-                                    <asp:TextBox ID="serordDateInTextBox" runat="server" Text='<%# Bind("serordDateIn") %>' />
-                                    <br />
-                                    serordDateOut:
-                                    <asp:TextBox ID="serordDateOutTextBox" runat="server" Text='<%# Bind("serordDateOut") %>' />
-                                    <br />
-                                    serordIssue:
-                                    <asp:TextBox ID="serordIssueTextBox" runat="server" Text='<%# Bind("serordIssue") %>' />
-                                    <br />
-                                    <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                                    &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-                                </InsertItemTemplate>
-                                <ItemTemplate>
-                                    id:
-                                    <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
-                                    <br />
-                                    serName:
-                                    <asp:Label ID="serNameLabel" runat="server" Text='<%# Bind("serName") %>' />
-                                    <br />
-                                    serDescription:
-                                    <asp:Label ID="serDescriptionLabel" runat="server" Text='<%# Bind("serDescription") %>' />
-                                    <br />
-                                    serPrice:
-                                    <asp:Label ID="serPriceLabel" runat="server" Text='<%# Bind("serPrice") %>' />
-                                    <br />
-                                    serordDateIn:
-                                    <asp:Label ID="serordDateInLabel" runat="server" Text='<%# Bind("serordDateIn") %>' />
-                                    <br />
-                                    serordDateOut:
-                                    <asp:Label ID="serordDateOutLabel" runat="server" Text='<%# Bind("serordDateOut") %>' />
-                                    <br />
-                                    serordIssue:
-                                    <asp:Label ID="serordIssueLabel" runat="server" Text='<%# Bind("serordIssue") %>' />
-                                    <br />
-                                </ItemTemplate>
-                            </asp:FormView>
-                        </div>
-                    </div>
-                </div>
+                <asp:Label ID="lblCustInfo" Visible="False" runat="server"><h2>Customer Information:</h2></asp:Label>
+                <asp:Table ID="tblCustInfo" runat="server" CssClass="table table-bordered table-hover" EnableViewState="true" HorizontalAlign="Center" Visible="False" BorderWidth="1px" GridLines="Both">
+                    <asp:TableRow ID="tblCustInfoTableHeadings" runat="server" Visible="false">
+                        <asp:TableCell runat="server" Font-Bold="True">Email Address</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Postal Code</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">City</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Address</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Phone Number</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Equipment Model</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Equipment Serial</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Equipment Type</asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br /><br /><br />
+                <asp:Label ID="lblOrders" Visible="False" runat="server"><h2>Order Information:</h2></asp:Label>
+                <asp:Label ID="lblOrdersNull" Visible="False" runat="server"></asp:Label>
+                <asp:Table ID="tblOrders" runat="server" CssClass="table table-bordered table-hover" EnableViewState="true" HorizontalAlign="Center" Visible="False" BorderWidth="1px" GridLines="Both">
+                    <asp:TableRow ID="tblOrdersTableHeadings" runat="server" Visible="false">
+                        <asp:TableCell runat="server" Font-Bold="True">Order Number</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Product Name</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Price</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Order Date</asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br /><br /><br />
+                <asp:Label ID="lblRepairs" Visible="False" runat="server"><h2>Repair Information:</h2></asp:Label>
+                <asp:Label ID="lblRepairsNull" Visible="False" runat="server"></asp:Label>
+                <asp:Table ID="tblRepairs" runat="server" CssClass="table table-bordered table-hover" EnableViewState="true" HorizontalAlign="Center" Visible="False" BorderWidth="1px" GridLines="Both">
+                    <asp:TableRow ID="tblRepairsTableHeadings" runat="server" Visible="false">
+                        <asp:TableCell runat="server" Font-Bold="True">Name of Service</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Service Description</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Price</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Service Order In</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Service Order Out</asp:TableCell>
+                        <asp:TableCell runat="server" Font-Bold="True">Service Order Issue</asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
                 <br />
-                <asp:ObjectDataSource ID="dsCustomers" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="SalesDatasets.SalesDatasetTableAdapters.customerTableAdapter"></asp:ObjectDataSource>
-                <asp:ObjectDataSource ID="dsCustInfo" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="SalesDatasets.SalesDatasetTableAdapters.custinfoTableAdapter">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="ddlCustomers" DefaultValue="1" Name="Param1" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:ObjectDataSource>
-                <asp:ObjectDataSource ID="dsEquipment" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="SalesDatasets.SalesDatasetTableAdapters.equipmentTableAdapter">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="ddlCustomers" DefaultValue="1" Name="Param1" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:ObjectDataSource>
-                <asp:ObjectDataSource ID="dsOrders" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="SalesDatasets.SalesDatasetTableAdapters.ordersTableAdapter">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="ddlCustomers" DefaultValue="1" Name="Param1" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:ObjectDataSource>
-                <asp:ObjectDataSource ID="dsRepairs" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="SalesDatasets.SalesDatasetTableAdapters.repairsTableAdapter">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="ddlCustomers" DefaultValue="1" Name="Param1" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:ObjectDataSource>
                 <br />
             </div>
 

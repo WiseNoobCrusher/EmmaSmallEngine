@@ -120,7 +120,6 @@
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
     <Content Include="Admin.aspx" />
-    <Content Include="HOME CSS.css" />
     <Content Include="Inventory.aspx" />
     <Content Include="Ordering.aspx" />
     <Content Include="Sales.aspx" />
