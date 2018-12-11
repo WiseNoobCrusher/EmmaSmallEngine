@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesDatasets", "SalesDatasets\SalesDatasets.csproj", "{A288A544-7A72-428D-A71A-D18E11366989}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmmaDatasets", "EmmaDatasets\EmmaDatasets.csproj", "{A288A544-7A72-428D-A71A-D18E11366989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C35A1A91-F4E4-47EC-8EDC-D1AC1D3FD42A}
+		SolutionGuid = {11110B7E-F563-40C1-B4F6-7225A1E3E9C1}
 	EndGlobalSection
 EndGlobal

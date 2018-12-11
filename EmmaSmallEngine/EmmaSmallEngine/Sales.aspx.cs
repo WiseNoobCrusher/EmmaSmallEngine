@@ -34,6 +34,9 @@ namespace EmmaSmallEngine
                 Response.Redirect("~/Login.aspx");
             }
 
+            this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
+            this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
+
             if (this.IsPostBack) return;
 
             this.ddlCustomers.Items.Add("Pick a Customer...");
@@ -45,6 +48,18 @@ namespace EmmaSmallEngine
             {
                 this.ddlCustomers.Items.Add(r.ItemArray[1].ToString());
             }
+        }
+
+        protected void ddlManagement_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = this.ddlManagement.SelectedValue;
+
+            this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
+            this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
+
+            this.ddlManagement.Items[0].Selected = true;
+
+            Response.Redirect("~/" + temp + ".aspx");
         }
 
         protected void custSubmit_Click(object sender, EventArgs e)
@@ -185,13 +200,16 @@ namespace EmmaSmallEngine
                     }
                     cnt++;
                 }
-                refreshCustomerDDL();
+                refreshDDL();
             }
             catch (Exception ex) { }
         }
 
-        private void refreshCustomerDDL()
+        private void refreshDDL()
         {
+            this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
+            this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
+
             this.ddlCustomers.Items[0].Attributes.Add("style", "color:gray");
             this.ddlCustomers.Items[0].Attributes.Add("disabled", "disabled");
         }

@@ -11,7 +11,7 @@
 <body class="Font">
     <form id="login" runat="server">
         <div>
-            <asp:Image class="Banner" runat="server" ImageUrl="~/img/logo.png" />
+            <asp:Image class="Banner" ID="LoginBanner" runat="server" ImageUrl="~/img/logo.png" />
         </div>
         <div>
             <strong><p class="PageFontSize">Login:</p></strong><br />

@@ -16,9 +16,15 @@
                 <br style="font-size: small"/>
                 <a class="NavItems" href="Home.aspx">Home</a>
                 <a class="NavItems" href="Sales.aspx">Sales</a>
+                <asp:DropDownList runat="server" ID="ddlManagement" CssClass="NavItems" AutoPostBack="True" ViewStateMode="Enabled" Font-Bold="true"  OnSelectedIndexChanged="ddlManagement_SelectedIndexChanged">
+                    <asp:ListItem>Management</asp:ListItem>
+                    <asp:ListItem>Customer</asp:ListItem>
+                    <asp:ListItem>Orders</asp:ListItem>
+                    <asp:ListItem>Deliveries</asp:ListItem>
+                </asp:DropDownList>
                 <a class="NavItems" href="Ordering.aspx">Ordering</a>
                 <a class="NavItems" href="Inventory.aspx" style="text-decoration: underline">Inventory</a>
-                <a class="NavItems" href="Admin.aspx"style="margin-right: 0px">Admin</a>
+                <a class="NavItems" href="Admin.aspx">Admin</a>
                 <br style="font-size: small"/><br style="font-size: small"/>
             </div>
             <div class="InventoryForm" style="height: 495px">

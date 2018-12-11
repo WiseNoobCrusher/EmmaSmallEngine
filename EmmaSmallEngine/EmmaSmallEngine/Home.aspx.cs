@@ -22,6 +22,9 @@ namespace EmmaSmallEngine
             {
                 lblWelcome.Text = User.Identity.GetUserName();
             }
+
+            this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
+            this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
         }
 
         protected void btnSales_Click(object sender, EventArgs e)
@@ -39,6 +42,18 @@ namespace EmmaSmallEngine
         protected void btnAdmin_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Admin.aspx");
+        }
+
+        protected void ddlManagement_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string temp = this.ddlManagement.SelectedValue;
+
+            this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
+            this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
+
+            this.ddlManagement.Items[0].Selected = true;
+
+            Response.Redirect("~/" + temp + ".aspx");
         }
     }
 }

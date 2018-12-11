@@ -12,7 +12,7 @@
 
 /* Navigation */
 .Nav {
-    margin: 25px;
+    margin: 20px;
     border-radius: 30px;
     display: block;
     background-color: #009900;
@@ -23,7 +23,7 @@
 
 .NavItems {
     text-decoration: none;
-    margin-right: 120px;
+    margin-right: 50px;
 }
 
 /* Login */
@@ -95,15 +95,18 @@
 
 /* Home */
 
-.Random {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-}
-
-.ButtonBlock {
-    text-align: center;
-    display: block;
+#ddlManagement {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    user-select: none;
+    font-family: 'Comic Sans MS';
+    font-weight: 600;
+    font-size: 17pt;
+    border: 0px #009900 solid;
+    margin-right: 50px;
+    border-left-color: #009900;
+    background-color: #009900;
+    color: blue;
 }
 
 .ButtonDiv {
@@ -115,6 +118,11 @@
 
 .ButtonCovers {
     width: 40%;
+    text-align: center;
+}
+
+.ButtonBlock {
+    text-align: center;
 }
 
 /* Sales */

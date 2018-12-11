@@ -85,8 +85,9 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="SalesDatasets">
-      <HintPath>..\..\SalesDatasets\SalesDatasets\bin\Debug\SalesDatasets.dll</HintPath>
+    <Reference Include="SalesDatasets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\EmmaDatasets\EmmaDatasets\bin\Debug\SalesDatasets.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -120,8 +121,11 @@
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
     <Content Include="Admin.aspx" />
+    <Content Include="Customer.aspx" />
+    <Content Include="Deliveries.aspx" />
     <Content Include="Inventory.aspx" />
     <Content Include="Ordering.aspx" />
+    <Content Include="Orders.aspx" />
     <Content Include="Sales.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
@@ -136,6 +140,20 @@
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deliveries.aspx.cs">
+      <DependentUpon>Deliveries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deliveries.aspx.designer.cs">
+      <DependentUpon>Deliveries.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Inventory.aspx.cs">
       <DependentUpon>Inventory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,6 +167,13 @@
     </Compile>
     <Compile Include="Ordering.aspx.designer.cs">
       <DependentUpon>Ordering.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
     </Compile>
     <Compile Include="Sales.aspx.cs">
       <DependentUpon>Sales.aspx</DependentUpon>
