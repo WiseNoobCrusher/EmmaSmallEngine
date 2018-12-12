@@ -55,11 +55,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeliveryDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RepairDataset.cs">
+      <DependentUpon>RepairDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RepairDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepairDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="SalesDataset.cs">
       <DependentUpon>SalesDataset.xsd</DependentUpon>
@@ -74,9 +97,53 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="CustomerDataset.xsc">
+      <DependentUpon>CustomerDataset.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerDataset.xss">
+      <DependentUpon>CustomerDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DeliveryDataset.xsc">
+      <DependentUpon>DeliveryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="DeliveryDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeliveryDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DeliveryDataset.xss">
+      <DependentUpon>DeliveryDataset.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataset.xsc">
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </None>
+    <None Include="OrderDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OrderDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OrderDataset.xss">
+      <DependentUpon>OrderDataset.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="RepairDataset.xsc">
+      <DependentUpon>RepairDataset.xsd</DependentUpon>
+    </None>
+    <None Include="RepairDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RepairDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RepairDataset.xss">
+      <DependentUpon>RepairDataset.xsd</DependentUpon>
     </None>
     <None Include="SalesDataset.xsc">
       <DependentUpon>SalesDataset.xsd</DependentUpon>

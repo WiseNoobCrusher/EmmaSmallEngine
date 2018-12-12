@@ -21,28 +21,29 @@
                     <asp:ListItem>Customer</asp:ListItem>
                     <asp:ListItem>Orders</asp:ListItem>
                     <asp:ListItem>Deliveries</asp:ListItem>
+                    <asp:ListItem>Repairs</asp:ListItem>
                 </asp:DropDownList>
                 <a class="NavItems" href="Ordering.aspx">Ordering</a>
                 <a class="NavItems" href="Inventory.aspx">Inventory</a>
                 <a class="NavItems" href="Admin.aspx">Admin</a>
                 <br style="font-size: small"/><br style="font-size: small"/>
             </div>
-            <div>
-                <table class="SalesFilterForm">
-                <tr>
-                    <td class="LabelName">Customer Name:</td>
-                    <td style="text-align: right">
-                        <asp:TextBox ID="txtCustName" runat="server" Height="20px" Width="160px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="LabelLogin">Customer City:</td>
-                    <td style="text-align: right">
-                        <asp:TextBox ID="txtCustCity" runat="server" Height="20px" Width="160px"></asp:TextBox>
-                    </td>
-                </tr>
-            </table>
+            <div align="center">
+                <label class="Labels">Filter:</label><br />
+                <table>
+                    <tr>
+                        <td><asp:label runat="server" class="LabelName">Customer Name:</asp:label></td>
+                        <td><asp:textbox runat="server" ID="txtName" class="TextName"></asp:textbox></td>
+                    </tr>
+                    <tr>
+                        <td><asp:label runat="server" class="LabelCity">Customer City:</asp:label></td>
+                        <td><asp:dropdownlist runat="server" ID="ddlCity" class="DropDownCity"></asp:dropdownlist></td>
+                    </tr>
+                </table>
+                <asp:Button runat="server" ID="custFilterSubmit" class="CustButton" Text="Filter" OnClick="custFilterSubmit_Click" />
+                <asp:Button runat="server" ID="custFilterClear" class="CustButton" Text="Clear" OnClick="custFilterClear_Click" />
             </div>
+            <br /><br /><br />
             <div style="text-align: center">
                 <label class="Labels">Select a Customer:</label><br />
                 <asp:DropDownList runat="server" class="CustomerDDL" ID="ddlCustomers">

@@ -127,6 +127,20 @@
 
 /* Sales */
 
+.LabelName, .LabelCity {
+    display: block;
+    font-size: 17pt;
+    text-align: left;
+}
+
+.TextName, .DropDownCity {
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    width: 250px;
+    height: 45px;
+}
+
 .CustomerDDL {
     width: 300px;
     height: 45px;

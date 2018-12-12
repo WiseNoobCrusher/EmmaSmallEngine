@@ -26,6 +26,7 @@
                     <asp:ListItem>Customer</asp:ListItem>
                     <asp:ListItem>Orders</asp:ListItem>
                     <asp:ListItem>Deliveries</asp:ListItem>
+                    <asp:ListItem>Repairs</asp:ListItem>
                 </asp:DropDownList>
                 <a class="NavItems" href="Ordering.aspx" style="text-decoration: underline">Ordering</a>
                 <a class="NavItems" href="Inventory.aspx">Inventory</a>

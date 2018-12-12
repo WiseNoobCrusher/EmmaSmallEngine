@@ -20,9 +20,11 @@ namespace EmmaSmallEngine
         static Sales()
         {
             customerTableAdapter daCustomer = new customerTableAdapter();
+            custCityTableAdapter daCity = new custCityTableAdapter();
             try
             {
                 daCustomer.Fill(dsSales.customer);
+                daCity.Fill(dsSales.custCity);
             }
             catch (Exception ex) { }
         }
@@ -44,9 +46,19 @@ namespace EmmaSmallEngine
             this.ddlCustomers.Items[0].Attributes.Add("disabled", "disabled");
             this.ddlCustomers.Items[0].Selected = true;
 
+            this.ddlCity.Items.Add("Pick a City...");
+            this.ddlCity.Items[0].Attributes.Add("style", "color:gray");
+            this.ddlCity.Items[0].Attributes.Add("disabled", "disabled");
+            this.ddlCity.Items[0].Selected = true;
+
             foreach (DataRow r in dsSales.customer)
             {
                 this.ddlCustomers.Items.Add(r.ItemArray[1].ToString());
+            }
+
+            foreach(DataRow r in dsSales.custCity)
+            {
+                this.ddlCity.Items.Add(r.ItemArray[0].ToString());
             }
         }
 
@@ -205,13 +217,68 @@ namespace EmmaSmallEngine
             catch (Exception ex) { }
         }
 
+        protected void custFilterSubmit_Click(object sender, EventArgs e)
+        {
+            this.ddlCustomers.Items.Clear();
+
+            customerFilterTableAdapter daCustomerFilter = new customerFilterTableAdapter();
+            daCustomerFilter.Fill(dsSales.customerFilter, this.txtName.Text, this.ddlCity.SelectedValue);
+
+            this.ddlCustomers.Items.Add("Pick a Customer...");
+
+            refreshDDL();
+
+            this.tblCustInfoTableHeadings.Visible = this.tblCustInfo.Visible = this.lblCustInfo.Visible = false;
+            this.tblOrdersTableHeadings.Visible = this.tblOrders.Visible = this.lblOrders.Visible = false;
+            this.tblRepairsTableHeadings.Visible = this.tblRepairs.Visible = this.lblRepairs.Visible = false;
+
+            foreach (DataRow r in dsSales.customerFilter)
+            {
+                this.ddlCustomers.Items.Add(r.ItemArray[0].ToString());
+            }
+
+            this.ddlCustomers.Items[this.ddlCustomers.SelectedIndex].Selected = false;
+            this.ddlCustomers.Items[0].Selected = true;
+        }
+
+        protected void custFilterClear_Click(object sender, EventArgs e)
+        {
+            this.ddlCustomers.Items.Clear();
+
+            this.txtName.Text = "";
+
+            this.ddlCustomers.Items.Add("Pick a Customer...");
+
+            refreshDDL();
+
+            this.tblCustInfoTableHeadings.Visible = this.tblCustInfo.Visible = this.lblCustInfo.Visible = false;
+            this.tblOrdersTableHeadings.Visible = this.tblOrders.Visible = this.lblOrders.Visible = false;
+            this.tblRepairsTableHeadings.Visible = this.tblRepairs.Visible = this.lblRepairs.Visible = false;
+
+            foreach (DataRow r in dsSales.customer)
+            {
+                this.ddlCustomers.Items.Add(r.ItemArray[1].ToString());
+            }
+
+            this.ddlCity.Items[this.ddlCity.SelectedIndex].Selected = false;
+            this.ddlCity.Items[0].Selected = true;
+
+            this.ddlCustomers.Items[this.ddlCustomers.SelectedIndex].Selected = false;
+            this.ddlCustomers.Items[0].Selected = true;
+        }
+
         private void refreshDDL()
         {
             this.ddlManagement.Items[0].Attributes.Add("style", "color:#009900");
             this.ddlManagement.Items[0].Attributes.Add("disabled", "disabled");
+            this.ddlManagement.Items[this.ddlManagement.SelectedIndex].Selected = false;
+            this.ddlManagement.Items[0].Selected = true;
 
             this.ddlCustomers.Items[0].Attributes.Add("style", "color:gray");
             this.ddlCustomers.Items[0].Attributes.Add("disabled", "disabled");
+
+            this.ddlCity.Items[0].Attributes.Add("style", "color:gray");
+            this.ddlCity.Items[0].Attributes.Add("disabled", "disabled");
         }
     }
 }
